@@ -1,15 +1,17 @@
-//1. charAt
+//2. charCodeAt
 console.log(`
-Metodo --> charAt()
+Metodo --> charCodeAt()
 
-Definicion --> El charAt()método de una Stringinstancia devuelve una nueva cadena que consta de la única unidad de código UTF-16 ubicada en el desplazamiento especificado en la cadena.
+Definicion --> El charCodeAt() método devuelve un número entero entre 0y 65535que representa la unidad de código UTF-16 en el índice dado.
 
 Texto --> Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal
 
 Ejemplo`)
-const charAt =
+const charCodeAt =
  'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-const index1 = 4
+const index2 = 4
 console.log(
- `El caracter encontrado en la posicion ${index1} es ${charAt.charAt(index1)}`
+ `El codigo de caracter ${charCodeAt.charCodeAt(
+  index2
+ )} es igual a ${charCodeAt.charAt(index2)}`
 )
