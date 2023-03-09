@@ -1,11 +1,12 @@
-//6. concat()
+//7. startsWith()
 console.log(`
-Metodo --> concat()
+Metodo --> startsWith()
 
-Definicion --> El concat() método concatena los argumentos de cadena a la cadena de llamada y devuelve una nueva cadena.
+Definicion --> El método startsWith() determina si una cadena comienza con los caracteres de una cadena específica, devolviendo verdadero o falso según corresponda.
 
 Ejemplo`)
-const str1 = 'Hola'
-const str2 = 'Mundo'
-console.log(str1.concat(' ', str2))
-console.log(str2.concat(', ', str1))
+const str1s =
+ 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
+
+console.log(str1s.startsWith('Los'))
+console.log(str1s.startsWith('prod', 3))
