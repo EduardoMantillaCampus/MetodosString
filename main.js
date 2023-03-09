@@ -1,8 +1,8 @@
-//4. fromCharCode()
+//5. fromCodePoint()
 console.log(`
-Metodo --> fromCharCode()
+Metodo --> fromCodePoint()
 
-Definicion --> El String.fromCharCode() método estático devuelve una cadena creada a partir de la secuencia especificada de unidades de código UTF-16.
+Definicion --> El String.fromCodePoint() método estático devuelve una cadena creada mediante el uso de la secuencia especificada de puntos de código.
 
 Ejemplo`)
-console.log(String.fromCharCode(189, 43, 190, 61))
+console.log(String.fromCodePoint(9731, 9733, 9842, 0x2f804))
