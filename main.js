@@ -1,11 +1,12 @@
 console.log(`
-Metodo --> match()
+Metodo --> matchAll()
 
-Definicion -->  El método match() recupera el resultado de hacer coincidir una cadena con una expresión regular.
+Definicion -->  El método matchAll() retorna un iterador de todos los resultados de ocurrencia en una cadena de texto contra una expresión regular, incluyendo grupos de captura.
 
 Ejemplo`)
 
-let cadena =
- 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
+const regexp = /t(e)(st(\d?))/g
+const str = 'test1test2'
 
-console.log(cadena.match('ductos'))
+const array = [...str.matchAll(regexp)]
+console.log(array[0])
