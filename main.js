@@ -1,10 +1,11 @@
 console.log(`
-Metodo --> localeCompare()
+Metodo --> match()
 
-Definicion -->  El método localeCompare() retorna un número indicando si una cadena de carateres de referencia va antes, después o si es la misma que la cadena dada en orden alfabético. 
+Definicion -->  El método match() recupera el resultado de hacer coincidir una cadena con una expresión regular.
 
 Ejemplo`)
 
-let cadena = 'vocal'
+let cadena =
+ 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
 
-console.log(cadena.localeCompare('alberto'))
+console.log(cadena.match('ductos'))
