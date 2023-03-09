@@ -1,11 +1,11 @@
 console.log(`
-Metodo --> toLowerCase()
+Metodo --> toUpperCase()
 
-Definicion -->  El método toLowerCase() devuelve el valor de la cadena de llamada convertido a minúsculas.
+Definicion -->  El método toUpperCase() devuelve el valor de la cadena de llamada convertido a mayúsculas (el valor se convertirá en una cadena si no lo es).
 
 Ejemplo`)
 
 let cadena =
  'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
 
-console.log(cadena.toLowerCase())
+console.log(cadena.toUpperCase())
