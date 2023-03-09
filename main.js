@@ -1,12 +1,11 @@
-//7. startsWith()
+//8. endsWith()
 console.log(`
-Metodo --> startsWith()
+Metodo --> endsWith()
 
-Definicion --> El método startsWith() determina si una cadena comienza con los caracteres de una cadena específica, devolviendo verdadero o falso según corresponda.
+Definicion --> El endsWith() método determina si una cadena termina con los caracteres de una cadena especificada, regresando true o false según corresponda.
 
 Ejemplo`)
-const str1s =
+const str1e =
  'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-
-console.log(str1s.startsWith('Los'))
-console.log(str1s.startsWith('prod', 3))
+console.log(str1e.endsWith('personal'))
+console.log(str1e.endsWith('cosmeticos', 17))
