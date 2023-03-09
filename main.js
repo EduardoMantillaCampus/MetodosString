@@ -1,17 +1,9 @@
-//2. charCodeAt
+//3. codePointAt
 console.log(`
-Metodo --> charCodeAt()
+Metodo --> codePointAt()
 
-Definicion --> El charCodeAt() método devuelve un número entero entre 0y 65535que representa la unidad de código UTF-16 en el índice dado.
-
-Texto --> Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal
+Definicion -->  El codePointAt() método devuelve un entero no negativo que es el valor del punto de código Unicode en la posición dada. Tenga en cuenta que esta función no proporciona el punto de código n en una cadena, sino el punto de código que comienza en el índice de cadena especificado.
 
 Ejemplo`)
-const charCodeAt =
- 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-const index2 = 4
-console.log(
- `El codigo de caracter ${charCodeAt.charCodeAt(
-  index2
- )} es igual a ${charCodeAt.charAt(index2)}`
-)
+const icons = '☃★♲'
+console.log(icons.codePointAt(1))
