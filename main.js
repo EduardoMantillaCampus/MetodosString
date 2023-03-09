@@ -1,21 +1,12 @@
 //10. indexOf()
 console.log(`
-Metodo --> indexOf()
+Metodo --> lastIndexOf()
 
-Definicion --> El indexOf() método, dado un argumento: una subcadena para buscar, busca en toda la cadena de llamada y devuelve el índice de la primera aparición de la subcadena especificada. Dado un segundo argumento: un número, el método devuelve la primera aparición de la subcadena especificada en un índice mayor o igual que el número especificado.
+Definicion --> El método lastIndexOf() devuelve la posicion (indice) en la que se encuentra el valorBusqueda, dentro del objeto String que realiza la llamada, de la última ocurrencia del valor especificado; o -1 si no se halla. La búsqueda se realiza empezando por el final de la cadena que realiza la llamada, empezando en indiceDesde.
 
 Ejemplo`)
 
-const paragraph =
+let cadena =
  'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-const searchTerm = 'comercializados'
-const indexOfFirst = paragraph.indexOf(searchTerm)
-console.log(
- `El índice de la primera "${searchTerm}" desde el principio es ${indexOfFirst}`
-)
-console.log(
- `El índice de la segunda  "${searchTerm}" es ${paragraph.indexOf(
-  searchTerm,
-  indexOfFirst + 1
- )}`
-)
+
+console.log(cadena.lastIndexOf('mayor'))
