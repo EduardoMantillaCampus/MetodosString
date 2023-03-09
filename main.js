@@ -1,8 +1,11 @@
-//5. fromCodePoint()
+//6. concat()
 console.log(`
-Metodo --> fromCodePoint()
+Metodo --> concat()
 
-Definicion --> El String.fromCodePoint() método estático devuelve una cadena creada mediante el uso de la secuencia especificada de puntos de código.
+Definicion --> El concat() método concatena los argumentos de cadena a la cadena de llamada y devuelve una nueva cadena.
 
 Ejemplo`)
-console.log(String.fromCodePoint(9731, 9733, 9842, 0x2f804))
+const str1 = 'Hola'
+const str2 = 'Mundo'
+console.log(str1.concat(' ', str2))
+console.log(str2.concat(', ', str1))
