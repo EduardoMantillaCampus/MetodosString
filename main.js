@@ -1,10 +1,11 @@
 console.log(`
-Metodo --> normalize()
+Metodo --> padEnd()
 
-Definicion -->  El método normalize() devuelve la forma de normalización Unicode de la cadena.
+Definicion -->  El método padEnd() devuelve la forma de normalización Unicode de la cadena.
 
 Ejemplo`)
 
-let cadena =
- 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-console.log(cadena.normalize('NFKD'))
+const str1 = 'Breaded Mushrooms'
+console.log(str1.padEnd(25, '.'))
+const str2 = '200'
+console.log(str2.padEnd(5))
