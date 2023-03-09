@@ -1,12 +1,10 @@
-//10. indexOf()
 console.log(`
-Metodo --> search()
+Metodo --> localeCompare()
 
-Definicion --> El método search() ejecuta una búsqueda que encaje entre una expresión regular y el objeto String desde el que se llama.
+Definicion -->  El método localeCompare() retorna un número indicando si una cadena de carateres de referencia va antes, después o si es la misma que la cadena dada en orden alfabético. 
 
 Ejemplo`)
 
-let cadena =
- 'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
+let cadena = 'vocal'
 
-console.log(cadena.search('personal'))
+console.log(cadena.localeCompare('alberto'))
