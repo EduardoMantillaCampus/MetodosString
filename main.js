@@ -1,15 +1,21 @@
-//9. Includes()
+//10. indexOf()
 console.log(`
-Metodo --> Includes()
+Metodo --> indexOf()
 
-Definicion --> El includes() método realiza una búsqueda que distingue entre mayúsculas y minúsculas para determinar si una cadena se puede encontrar dentro de otra cadena, regresando trueo falsesegún corresponda.
+Definicion --> El indexOf() método, dado un argumento: una subcadena para buscar, busca en toda la cadena de llamada y devuelve el índice de la primera aparición de la subcadena especificada. Dado un segundo argumento: un número, el método devuelve la primera aparición de la subcadena especificada en un índice mayor o igual que el número especificado.
 
 Ejemplo`)
-const sentence =
+
+const paragraph =
  'Los productos mayor comercializados en colombia son los cosmeticos y productos de cuidado personal'
-const word = 'productos'
+const searchTerm = 'comercializados'
+const indexOfFirst = paragraph.indexOf(searchTerm)
 console.log(
- `La palabra "${word}" ${
-  sentence.includes(word) ? 'si se encuentra' : 'no '
- } en la sentencia`
+ `El índice de la primera "${searchTerm}" desde el principio es ${indexOfFirst}`
+)
+console.log(
+ `El índice de la segunda  "${searchTerm}" es ${paragraph.indexOf(
+  searchTerm,
+  indexOfFirst + 1
+ )}`
 )
